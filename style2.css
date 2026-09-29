@@ -1,0 +1,68 @@
+body{
+    min-height: 40px;
+}
+
+header{
+    display: flex;
+     justify-content: space-between;
+     font-size: 45px;
+     background-color: green;
+     align-items: center;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    justify-content: flex-end; 
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: blue ;
+}
+
+div{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+  gap: 25px;
+    background-color: beige ;
+    margin: 0 auto;
+}
+
+footer{
+    background-color: rgb(29, 29, 29);
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: beige ;
+}
+
+
+
+/* Base styles for phones */
+.container {
+  display: block;
+}
+
+/* Styles for tablets and up */
+@media (min-width: 768px) {
+  .container {
+    display: flex;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .sidebar {
+    display: none; /* Hide sidebar on mobile */
+  }
+  .main-content {
+    width: 100%;
+  }
+}
+
